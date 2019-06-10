@@ -1,1 +1,3 @@
 # Course
+Task №1: COMPLETE
+Task №2: in the process.....
