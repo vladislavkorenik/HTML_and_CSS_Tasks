@@ -1,4 +1,5 @@
 # Course
 Lesson №1: DONE<br>
 Lesson №2: DONE<br>
-Lesson №3: May be next day)<br>
+Lesson №3: DONE<br>
+Lesson №4: ......<br>
