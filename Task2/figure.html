@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>About figure</title>
+		<style>
+			body{
+				margin: 0px;
+				padding: 0px;
+			}
+			main{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			.head{
+				text-align: center;
+				padding-top: 10px;
+			}
+			.example{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<section class="about_figure">
+				<header class="head">
+					<h1>Тег &lt;figure&gt;</h1>
+				</header>
+				<div class="about">
+					<h2>
+					Описание:
+					</h2>
+					<div>
+						Используется для группирования любых элементов, например, изображений и подписей к ним.
+					</div>
+				</div>
+				<div class="example">
+					<figure>
+						<img src="img/1.png" alt="Car">
+						<figcaption>Детская машинка</figcaption>
+					</figure>
+				</div>
+			</section>
+			<section class="about_figcaption">
+				<header class="head">
+					<h1>Тег &lt;figcaption&gt;</h1>
+				</header>
+				<div class="about">
+					<h2>
+					Описание:
+					</h2>
+					<div>
+						Содержит описание для тега &lt;figure&gt;. Тег &lt;figcaption&gt; должен быть первым или последним элементом в группе.
+					</div>
+				</div>
+				<div class="example">
+					<figure>
+						<img src="img/2.png" alt="train">
+						<figcaption>Поезд</figcaption>
+					</figure>
+				</div>
+			</section>
+			<footer>
+				<hr>
+				<section class="conclusion">
+					<ol><h2>Плюсы:</h2>
+						<li>Устанавливает явную подпись под изображением. Если на сайте несколько изображений, диаграмм и т.д., то использование данных тегов улучшит читабельность данной статьи.
+							Пользователь сразу понимает по подписи на какое изображение необходимо обратить внимание.
+						</li>
+					</ol>
+					<ol><h2>Минусы:</h2>
+						<li>Увеличивает объем html-кода</li>
+						<li>При ошибке загрузки изображения подпись будет лишней, т.к. у тега <i>img</i> есть атрибут <strong>alt</strong></li>
+					</ol>
+				</section>
+			</footer>
+		</main>
+		<p></p>
+	</body>
+</html>
