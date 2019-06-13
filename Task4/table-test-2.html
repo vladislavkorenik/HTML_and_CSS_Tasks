@@ -7,28 +7,30 @@
 			html,
 			body{
 				height: 100%;
+				font-size: 25px;
 				margin: 0;
 				padding: 0;
-				font-size: 25px;
+			}
+		    .first_table{
+				border: 2px solid blue;
 			}
 			table{
-				border: 2px solid blue;
 				width: 100%;
 				height: 100%;
 				border-collapse: collapse;
 			}
-			th,td{
+		    th,td{
 				padding: 5px;
 			}
-			th{
+			.first_table th{
 				background-color: #888888;
 				color: white;
 			}
-			td{
+			.first_table td{
 				border: 2px solid blue;
 			}
-			td:last-child,
-			td:nth-last-child(2){
+			.first_table td:last-child,
+			.first_table td:nth-last-child(2){
 				text-align: center;
 			}
 			.center{
@@ -37,10 +39,21 @@
 			.right{
 				text-align: right;
 			}
+			.second_table{
+		    	height: 400px;
+            	width: 400px;
+            	margin: 100px auto;
+            }
+			.bg_red{
+				background-color: red;
+			}
+			.bg_lightgreen{
+				background-color: #7fff00;
+			}
 		</style>
 	</head>
 	<body>
-		<table>
+		<table class="first_table">
 			<tr>
 				<th>Название1</th>
 				<th>Название2</th>
@@ -112,5 +125,74 @@
 				<td>15</td>
 			</tr>
 		</table>
+		<hr>
+		<table class="second_table">
+			<tr>
+				<td class="bg_red"></td>
+				<td></td>
+				<td class="bg_red"></td>
+				<td class="bg_lightgreen"></td>
+				<td class="bg_red"></td>
+				<td></td>
+				<td class="bg_red"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td class="bg_red"></td>
+				<td class="bg_lightgreen"></td>
+				<td></td>
+				<td class="bg_lightgreen"></td>
+				<td class="bg_red"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="bg_red"></td>
+				<td class="bg_lightgreen"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="bg_lightgreen"></td>
+				<td class="bg_red"></td>
+			</tr>
+			<tr>
+				<td class="bg_lightgreen"></td>
+				<td></td>
+				<td></td>
+				<td class="bg_red"></td>
+				<td></td>
+				<td></td>
+				<td class="bg_lightgreen"></td>
+			</tr>
+			<tr>
+				<td class="bg_red"></td>
+				<td class="bg_lightgreen"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="bg_lightgreen"></td>
+				<td class="bg_red"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td class="bg_red"></td>
+				<td class="bg_lightgreen"></td>
+				<td></td>
+				<td class="bg_lightgreen"></td>
+				<td class="bg_red"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="bg_red"></td>
+				<td></td>
+				<td class="bg_red"></td>
+				<td class="bg_lightgreen"></td>
+				<td class="bg_red"></td>
+				<td></td>
+				<td class="bg_red"></td>
+			</tr>
+		</table>
+		<hr>
+		<div class="third_table"></div>
+		<div class="fouth_table"></div>
 	</body>
 </html>
