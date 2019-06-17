@@ -4,6 +4,10 @@
 		<meta charset="UTF-8">
 		<title>Position images</title>
 		<style>
+			.centered_x {
+				left: 50%;
+				transform: translateX(-50%);
+			}
 			html {
 				width: 100%;
 			}
@@ -25,29 +29,24 @@
 				position: relative;
 				width: 300px;
 				height: 450px;
-				left: 50%;
-				margin-left: -150px;
 			}
 			.img img {
 				position: absolute;
 			}
 			.top_right {
-				left: 150px;
+				left: 165px;
 			}
 			.top_left {
-				right: 170px;
+				right: 140px;
 			}
 			.center {
 				top: 50px;
 			}
 			.bottom {
-				top: 180px;
-				right: 72px;
+				top: 190px;
 			}
 			.to_top {
 				position: absolute;
-				left: 50%;
-				margin-left: -41px;
 				bottom: -20px;
 			}
 		</style>
@@ -77,12 +76,12 @@
 				There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
 			</p>
 		</div>
-		<div class="img">
+		<div class="img centered_x">
 			<img src="biohazard.png" alt="biohazard" class="top_left">
 			<img src="man-and-woman.png" alt="man-and-woman" class="top_right">
-			<img src="yin-yang.png" alt="yin-yang" class="bottom">
-			<img src="no-smoking.png" alt="no-smoking" class="center">
-			<a href="#textik"><img src="to-top.png" alt="to-top" class="to_top"></a>
+			<img src="yin-yang.png" alt="yin-yang" class="bottom centered_x">
+			<img src="no-smoking.png" alt="no-smoking" class="center centered_x">
+			<a href="#textik"><img src="to-top.png" alt="to-top" class="to_top centered_x"></a>
 		</div>
 	</body>
 </html>
