@@ -5,6 +5,11 @@
 		<title>Slider</title>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 		<style>
+			.centered_x{
+				left: 50%;
+				transform: translateX(-50%);
+				position: absolute;
+			}
 			body {
 				font-family: 'Open Sans', sans-serif;
 				margin: 0;
@@ -21,11 +26,8 @@
 			}
 			.text {
 				color: white;
-				position: absolute;
 				text-align: center;
 				bottom: 35%;
-				left: 50%;
-				margin-left: -257px;
 			}
 			.text h4 {
 				text-transform: uppercase;
@@ -40,57 +42,44 @@
 				font-size: 35px;
 				margin-top: 10px;
 			}
+			.buttons {
+				height: 100%;
+				max-width: 1200px;
+				position: relative;
+				margin: 0 auto;
+			}
 			.left {
 				background: url(prev-next-sprite.png);
 				background-repeat: no-repeat;
 				background-position: left 80px top 170px;
 				height: 100%;
-				width: 120px;
-				position: absolute;
-				left: 16%;
-				margin-right: -60px;
+				width: 110px;
+				left: 0;
 			}
 			.right {
 				background-image: url(prev-next-sprite.png);
 				background-repeat: no-repeat;
 				background-position: right 80px top 170px;
 				height: 100%;
-				width: 120px;
-				position: absolute;
-				right: 16%;
-				margin-left: -60px;
+				width: 110px;
+				left: 100%;
 			}
 			.pagination {
-				height: 30%;
-				width: 50%;
-				bottom: -15%;
-				left: 50%;
-				margin-left: -110px;
-				position: absolute;
-			}
-			ul {
-				list-style-type: square;
-				height: 30%;
-				width: 50%;
-				position: absolute;
+				width: 210px;
+				top: 85%;
 			}
 			ul li {
 				display: inline-block;
-				text-align: center;
+				list-style-type: square;
 			}
 			li a {
 				display: block;
-				padding: 10px 10px;
+				padding: 10px;
 				background-color: #ffffff;
-				margin: 5px;
+				margin: 0 5px;
 			}
 			li a:hover {
 				background-color: #f8a408;
-			}
-			.bg {
-				position: absolute;
-				left: 50%;
-				margin-left: -600px;
 			}
 		</style>
 	</head>
@@ -99,8 +88,8 @@
 		Верстка заготовки для слайдера
 		</h1>
 		<div class="slider">
-			<img src="slider-img-01.jpg" alt="background" class="bg">
-			<div class="text">
+			<img src="slider-img-01.jpg" alt="background" class="centered_x">
+			<div class="text centered_x">
 				<h4>
 				комфортная одежда
 				</h4>
@@ -108,9 +97,11 @@
 					для всех видов спорта
 				</p>
 			</div>
-			<a href="#" class="left"></a>
-			<a href="#" class="right"></a>
-			<div class="pagination">
+			<div class="buttons">
+				<a href="#" class="right centered_x"></a>
+				<a href="#" class="left centered_x"></a>
+			</div>
+			<div class="pagination centered_x">
 				<ul>
 					<li><a href="#"></a></li>
 					<li><a href="#"></a></li>
