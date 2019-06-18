@@ -21,13 +21,13 @@
 				padding: 0;
 				list-style-type: none;
 			}
-			ul li {
+			.menu > li {
 				display: inline-block;
 				position: relative;
            	 	padding: 10px 25px 10px 55px;
 			}
 			.menu > li::before {
-				content: '  ';
+				content: ' ';
 				width: 35px;
 				height: 35px;
 				position: absolute;
@@ -53,9 +53,38 @@
 			.menu > li:hover {
 				background-color: #336699;
 			}	
-			.submenu li {
-				position: absolute;
+			.menu li:hover .submenu{ 
+				display: block;
+			}
+			.submenu {
 				display: none;
+				position: absolute;
+				left: 0px;
+				top: 38px;
+			}
+			.submenu li {
+				display: block;
+				background-color: white;
+				color: grey;
+				padding: 10px 20px;
+				width: 130px;
+			}
+			.submenu li:hover {
+				border-left: 5px solid #336699;
+				background-color: #C6C6C6;
+				width: 125px;
+			}
+			.submenu li:last-child {
+				position: relative;
+			}
+			.lvl_three {
+				display: none;
+				position: absolute;
+				left: 165px;
+				top: 0;
+			}
+			.submenu li:hover .lvl_three{ 
+				display: block;
 			}
 		</style>
 	</head>
