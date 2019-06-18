@@ -14,29 +14,48 @@
 				font-weight: lighter;
 			}
 			.pagination {
-				background-color: #2D2D2D;
 				position: relative;
+				background-color: #2D2D2D;
+			}
+			ul {
+				padding: 0;
+				list-style-type: none;
 			}
 			ul li {
 				display: inline-block;
-				padding: 10px;
+				position: relative;
+           	 	padding: 10px 25px 10px 55px;
 			}
-			.menu > li {
-				padding-right: 20px;
-			}
-			.menu > li:first-child::before {
-				content: ' ';
+			.menu > li::before {
+				content: '  ';
 				width: 35px;
 				height: 35px;
-				background: url('icons.png') no-repeat;
-				background-position: -70px 0px;
 				position: absolute;
-				left: 1%;
-				top: 1%;
+				background: url('icons.png') no-repeat;
+				left: 20px;
+				bottom: 2px;
 			}
+			.menu > li:first-child::before {
+				background-position: -70px 0px;
+			}
+			.menu > li:last-child::before {
+				background-position: 0px 0px;
+			}
+			.menu > li:nth-child(2)::before {
+				background-position: -105px 0px;
+			}
+			.menu > li:nth-child(3)::before {
+				background-position: right 0px top 0px;
+			}	
+			.menu > li:nth-child(4)::before {
+				background-position: -35px 0px;
+			}
+			.menu > li:hover {
+				background-color: #336699;
+			}	
 			.submenu li {
 				position: absolute;
-				display: block;
+				display: none;
 			}
 		</style>
 	</head>
