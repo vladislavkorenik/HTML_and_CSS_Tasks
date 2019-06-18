@@ -1,72 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Blank menu</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			background-color: grey;
-		}
-		.head h1{
-			text-align: center;
-			font-weight: lighter;
-			color: white
-		}
-		.pagination {
-			background-color: #2D2D2D;
-			position: relative;
-		}
-		ul li {
-			display: inline-block;
-		}
-	</style>
-</head>
-<body>
-	<div class="head">
-		<h1>
+	<head>
+		<meta charset="UTF-8">
+		<title>Blank menu</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: grey;
+				color: white;
+			}
+			.head h1{
+				text-align: center;
+				font-weight: lighter;
+			}
+			.pagination {
+				background-color: #2D2D2D;
+				position: relative;
+			}
+			ul li {
+				display: inline-block;
+				padding: 10px;
+			}
+			.menu > li {
+				padding-right: 20px;
+			}
+			.menu > li:first-child::before {
+				content: ' ';
+				width: 35px;
+				height: 35px;
+				background: url('icons.png') no-repeat;
+				background-position: -70px 0px;
+				position: absolute;
+				left: 1%;
+				top: 1%;
+			}
+			.submenu li {
+				position: absolute;
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			<h1>
 			Много-уровневое горизонтальное меню
-		</h1>
-	</div>
-	<div class="pagination">
-		<ul>
-			<li>
-				<ul class="submenu">
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-			</li>
-			<li></li>
-			<li>
-				<li>
+			</h1>
+		</div>
+		<div class="pagination">
+			<ul class="menu">
+				<li>Главная
 					<ul class="submenu">
-						<li></li>
-						<li>
+						<li>Подменю 1</li>
+						<li>Подменю 2</li>
+						<li>Подменю 3</li>
+					</ul>
+				</li>
+				<li>О нас</li>
+				<li>Портфолио
+					<ul class="submenu">
+						<li>Подменю 1</li>
+						<li>Уровень 3 меню
 							<ul class="lvl_three">
-								<li></li>
-								<li></li>
-								<li></li>
+								<li>Подменю 4</li>
+								<li>Подменю 5</li>
+								<li>Подменю 6</li>
 							</ul>
 						</li>
 					</ul>
 				</li>
-			</li>
-			<li>
-				<li>
-					<ul class="submenu">
-						<li></li>
-						<li>
-							<ul class="lvl_three">
-								<li></li>
-								<li></li>
-								<li></li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-			</li>
-		</ul>
-	</div>
-</body>
+				<li>Блог</li>
+				<li>Контакты</li>
+			</ul>
+		</div>
+	</body>
 </html>
