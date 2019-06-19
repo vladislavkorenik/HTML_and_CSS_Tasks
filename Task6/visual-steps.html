@@ -30,7 +30,6 @@
 				background-color: purple;
 				color: white;
 			}
-
 			div::after {
 				content: " ";
 				border-bottom: 3px solid lightgrey;
@@ -39,6 +38,9 @@
 				right: -50px;
 				top: 50%;
 				transform: translateX(-50%);
+			}
+			li:last-child div::after {
+				display: none;
 			} 
 		</style>
 	</head>
