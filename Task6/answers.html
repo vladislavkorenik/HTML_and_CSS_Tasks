@@ -1,47 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Answer</title>
-	<style>
-		p {
-			color: #848484;
-		}
-		.user {
-			color: #666666;
-			font-weight: bold;
-		}
-		body {
-			background-color: #f0f1f1;
-			font-family: Arial, sans-serif;
-		}
-		.image {
-			background-color: white;
-			width: 50px;
-			height: 50px;
-			padding: 5px;
-			float: left;
-			margin-right: 12px;
-		}
-		.comment {
-			display: inline-block;
-			width: 510px;
-			background-color: white;
-			border-radius: 10px;
-			padding: 12px 12px 0 12px;
-		}
-		.head {
-			margin: 0;
-		}
-	</style>
-</head>
-<body>
-	<div class="comments">
-		<div class="image"><img src="http://placehold.it/50x50" alt="phoyo"></div>
-		<div class="comment">
-			<p class="head"><span class="user">User1231231</span> спрашивает:</p>
-			<p>Почему во многих макетах и тестовых заданиях используется текст &laquo;Lorem ipsum dolor sit amet&raquo;???</p>
+	<head>
+		<meta charset="UTF-8">
+		<title>Answer</title>
+		<style>
+			p {
+				color: #848484;
+			}
+			.user {
+				color: #666666;
+				font-weight: bold;
+			}
+			body {
+				background-color: #f0f1f1;
+				font-family: Arial, sans-serif;
+			}
+			.image {
+				background-color: white;
+				width: 50px;
+				height: 50px;
+				padding: 5px;
+				float: left;
+				margin-right: 12px;
+			}
+			.comment {
+				display: inline-block;
+				width: 510px;
+				background-color: white;
+				border-radius: 10px;
+				padding: 12px 12px 0 12px;
+				margin-bottom: 10px;
+			}
+			.head {
+				margin: 0;
+			}
+			.question {
+				position: relative;
+			}
+			.answers {
+				left: 80px;
+				width: 620px;
+				position: absolute;
+			}
+			.answers .answer:nth-child(2) p:last-child::first-letter {
+				color: black;
+			}
+			.answer .comment {
+				width: 438px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="question">
+			<div class="image"><img src="http://placehold.it/50x50" alt="photo"></div>
+			<div class="comment">
+				<p class="head">
+					<span class="user">User1231231</span> спрашивает:
+				</p>
+				<p>
+					Почему во многих макетах и тестовых заданиях используется текст &laquo;Lorem ipsum dolor sit amet&raquo;???
+				</p>
+			</div>
 		</div>
-	</div>
-</body>
+		<div class="answers">
+			<div class="answer">
+				<div class="image"><img src="http://placehold.it/50x50" alt="photo"></div>
+				<div class="comment">
+					<p class="head">
+						<span class="user">User444</span> отвечает:
+					</p>
+					<p>
+						Аннотация
+						<br>
+						Фраза &laquo;Lorem ipsum dolor sit amet consectetuer&raquo;
+						впервые появилась в справке Microsoft Word. Фраза
+						производит впечатление осмысленной латинской
+						поговорки. На самом деле это не так.
+					</p>
+				</div>
+			</div>
+			<div class="answer">
+				<div class="image"><img src="http://placehold.it/50x50" alt="photo"></div>
+				<div class="comment">
+					<p class="head">
+						<span class="user">User8678678</span> отвечает:
+					</p>
+					<p>
+						Lorem Ipsum Dolor sit amet. =)))
+					</p>
+				</div>
+			</div>
+			<div class="answer">
+				<div class="image"><img src="http://placehold.it/50x50" alt="photo"></div>
+				<div class="comment">
+					<p class="head">
+						<span class="user">User1234567</span> отвечает:
+					</p>
+					<p>
+						Хотя фраза и бессмысленна, она имеет давнюю историю. Фраза использовалась печатниками многие столетия для демонстрации наиболее важных особенностей своих шрифтов. Она использовалась потому, что символы составляют сложные по межсимвольным промежуткам и по комбинациям символов пары, наилучшим образом демонстрирующие преимущества данного начертания.
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
