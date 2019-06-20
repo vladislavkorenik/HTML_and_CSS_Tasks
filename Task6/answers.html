@@ -22,6 +22,7 @@
 				padding: 5px;
 				float: left;
 				margin-right: 12px;
+				position: relative;
 			}
 			.comment {
 				display: inline-block;
@@ -36,17 +37,44 @@
 			}
 			.question {
 				position: relative;
+				width: 620px;
 			}
 			.answers {
 				left: 80px;
 				width: 620px;
 				position: absolute;
 			}
-			.answers .answer:nth-child(2) p:last-child::first-letter {
-				color: black;
-			}
 			.answer .comment {
 				width: 438px;
+			}
+			.answers .image::before {
+				content: " ";  
+				border: 4px solid transparent; 
+				border-left: 4px solid #bbbbbb; 
+				position: absolute; 
+				top: 50%;
+				transform: translateY(-50%);
+				left: -5px;
+			}
+			.answers .image::after {
+				content: " ";  
+				border-bottom: 1px solid #bbbbbb; 
+				border-left: 1px solid #bbbbbb; 
+				height: 131%;
+				position: absolute; 
+				width: 65%;
+				top: -82%;
+				right: 105%;
+			}
+			.answer:last-child .image::after {
+				content: " ";  
+				border-bottom: 1px solid #bbbbbb; 
+				border-left: 1px solid #bbbbbb; 
+				height: 450%;
+				position: absolute; 
+				width: 65%;
+				top: -401%;
+				right: 105%;
 			}
 		</style>
 	</head>
