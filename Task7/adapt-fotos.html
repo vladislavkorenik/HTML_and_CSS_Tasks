@@ -4,36 +4,54 @@
 		<meta charset="UTF-8">
 		<title>Adaptive photos</title>
 		<style>
-			body {
-				margin: 0;
-			}
 			h2 {
 				text-align: center;
 			}
 			.container {
 				max-width: 1200px;
 				min-width: 320px;
-				margin: 5px auto;
-				border: 1px solid black;
+				margin: 0 auto;
+
+			}
+			@media screen and (min-width: 980px) {
+				.container img {
+					width: 30%;
+					height: 30%;
+					margin: 10px 10px;
+				}
+			}
+			@media screen and (max-width: 980px)
+			and (min-width: 768px) {
+				.container img {
+					max-width: 30%;
+					max-height: 30%;
+					margin: 10px 10px;
+				}
+			}
+			@media screen and (max-width: 768px)
+			and (min-width: 480px) {
+				.container img {
+					max-width: 40%;
+					max-height: 40%;
+					margin: 10px 10px;
+				}
 			}
 		</style>
 	</head>
 	<body>
+		<h2>
+			Адаптивная верстка галереи
+		</h2>
 		<div class="container">
-			<h2>
-				Адаптивная верстка галереи
-			</h2>
-			<div class="photo">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-			</div>
+			<img src="nature1.jpg" alt="nature" title="nature">
+			<img src="nature2.jpg" alt="nature" title="nature">
+			<img src="nature3.jpg" alt="nature" title="nature">
+			<img src="nature4.jpg" alt="nature" title="nature">
+			<img src="nature5.jpg" alt="nature" title="nature">
+			<img src="nature1.jpg" alt="nature" title="nature">
+			<img src="nature2.jpg" alt="nature" title="nature">
+			<img src="nature3.jpg" alt="nature" title="nature">
+			<img src="nature4.jpg" alt="nature" title="nature">
 		</div>
 	</body>
 </html>
