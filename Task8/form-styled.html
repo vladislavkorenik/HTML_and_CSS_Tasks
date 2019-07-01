@@ -23,24 +23,27 @@
 				width: 500px;
 				border-radius: 10px;
 			}
-			p {
-				margin-bottom: 5px;
+			label {
 				color: #6C6C6E;
-				font-size: 12px;
+				font-size: 10px;
 				font-weight: bold;
 				margin-left: 5px;
 			}
 			.forms {
-				margin-left: 25px;
+				margin: 15px 0px 0px 25px;
+				position: relative;
 			}
 			.forms input, 
 			textarea {
 				height: 30px;
-				width: 450px;
+				width: 410px;
 				border: 1px solid grey;
 				border-radius: 5px;
+				padding-left: 40px;
+				font-size: 12px;
 			}
-			input:focus {
+			input:focus,
+			textarea:focus {
 				border: 2px solid #6499FF;
 				outline: none;
 			}
@@ -60,6 +63,32 @@
 			.center {
 				text-align: center;
 			}
+			label::after {
+				content: " ";
+            	top: 24px;
+            	left: 0px;
+            	height: 30px;
+            	width: 30px;
+            	position: absolute;
+        	}  
+        	.forms:first-child label::after {
+            	background: url(form-spritesheet.png) no-repeat;
+            	background-position: right 2px top 0;
+        	}
+        	.forms:nth-child(2) label::after {
+            	background: url(form-spritesheet.png) no-repeat;
+            	background-position: left -20px top 0;
+        	}
+       		.forms:nth-child(3) label::after {
+            	background: url(form-spritesheet.png) no-repeat;
+            	background-position: right -25px top 0;
+            	width: 22px;
+            	margin-left: 5px;
+        	}
+        	.forms:nth-child(4) label::after {
+            	background: url(form-spritesheet.png) no-repeat;
+            	background-position: left 10px top 0;
+       	 	}
 		</style>
 	</head>
 	<body>
@@ -69,20 +98,20 @@
 			</div>
 			<form>
 				<div class="forms">
-					<p>Имя:</p>
-					<input type="text" placeholder="Введите Ваше имя">
+					<label for="name">Имя:</label>
+					<input type="text" id="name" placeholder="Введите Ваше имя">
 				</div>
 				<div class="forms">
-					<p>Ваш email:</p>
-					<input type="text" placeholder="Введите адрес Вашей почты">
+					<label for="email">Ваш email:</label>
+					<input type="text" id="email" placeholder="Введите адрес Вашей почты">
 				</div>
 				<div class="forms">
-					<p>Ваш телефон:</p>
-					<input type="text" placeholder="Введите номер телефона">
+					<label for="number">Ваш телефон:</label>
+					<input type="text" id="number" placeholder="Введите номер телефона">
 				</div>
 				<div class="forms">
-					<p>Сообщение:</p>
-					<textarea name="comment" placeholder="Текст сообщения"></textarea>
+					<label for="comments">Сообщение:</label>
+					<textarea name="comment" id="comments" placeholder="Текст сообщения"></textarea>
 				</div>
 				<p class="center">
 					<input type="submit" value="Отправить" class="button">
