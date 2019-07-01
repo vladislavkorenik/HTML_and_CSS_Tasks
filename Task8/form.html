@@ -3,8 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Form</title>
+	<style>
+		body {
+			background-color: #D3D3D3;
+		}
+		.container {
+			margin: 0 auto;
+			background-color: white;
+			width: 900px;
+			padding: 30px 0 40px 50px;
+		}
+	</style>
 </head>
 <body>
-	
+	<div class="container">
+		<h2>Обратная связь</h2>
+		<form>
+			<p>Имя:</p>
+			<input type="text" placeholder="Введите Ваше имя">
+			<p>Ваш email:</p>
+			<input type="text" placeholder="Введите адрес Вашей почты">
+			<p>Ваш телефон:</p>
+			<input type="text" placeholder="Введите номер телефона">
+			<p>Сообщение:</p>
+			<textarea name="comment" cols="50" rows="10" placeholder="Текст сообщения..."></textarea>
+			<br>
+			<input type="submit" value="Отправить">
+		</form>
+	</div>
 </body>
 </html>
