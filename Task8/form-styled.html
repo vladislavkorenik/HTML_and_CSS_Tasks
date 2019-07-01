@@ -65,11 +65,11 @@
 			}
 			label::after {
 				content: " ";
+				position: absolute;
             	top: 24px;
             	left: 0px;
             	height: 30px;
             	width: 30px;
-            	position: absolute;
         	}  
         	.forms:first-child label::after {
             	background: url(form-spritesheet.png) no-repeat;
@@ -89,6 +89,22 @@
             	background: url(form-spritesheet.png) no-repeat;
             	background-position: left 10px top 0;
        	 	}
+       	 	.inline input {
+       	 		width: 250px;
+       	 	}
+       	 	.inline #name {
+       	 		margin-left: 50px;
+       	 	}
+       	 	.inline #email {
+       	 		margin-left: 44px;
+       	 	}
+       	 	.inline #number {
+       	 		margin-left: 28px;
+       	 	}
+       	 	.inline label:not(.comment)::after {
+            	top: 5px;
+            	left: 85px;
+        	}  
 		</style>
 	</head>
 	<body>
@@ -96,21 +112,21 @@
 			<div class="header">
 				<h1>Обратная связь</h1>
 			</div>
-			<form>
+			<form class="inline">
 				<div class="forms">
 					<label for="name">Имя:</label>
 					<input type="text" id="name" placeholder="Введите Ваше имя">
 				</div>
 				<div class="forms">
-					<label for="email">Ваш email:</label>
+					<label for="email">Email:</label>
 					<input type="text" id="email" placeholder="Введите адрес Вашей почты">
 				</div>
 				<div class="forms">
-					<label for="number">Ваш телефон:</label>
+					<label for="number">Телефон:</label>
 					<input type="text" id="number" placeholder="Введите номер телефона">
 				</div>
 				<div class="forms">
-					<label for="comments">Сообщение:</label>
+					<label for="comments" class="comment">Сообщение:</label>
 					<textarea name="comment" id="comments" placeholder="Текст сообщения"></textarea>
 				</div>
 				<p class="center">
