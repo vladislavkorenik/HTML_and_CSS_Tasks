@@ -6,7 +6,32 @@
 	<style>
 		body {
 			margin: 0;
-			background: url('')
+			background: url('paper.jpg') no-repeat;
+			background-size: 100%;
+			font-family: sans-serif;
+		}
+		.opa_block {
+			background-color: grey;
+			width: 450px;
+			height: 30px;
+			margin: 0 auto;
+			opacity: 0.4;
+		}
+		.head h2{
+			text-align: center;
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+		p {
+			text-align: center;
+		}
+		a {
+			text-decoration: none;
+		}
+		.login {
+			background-color: white;
+			width: 500px;
+			margin: 100px auto;
 		}
 	</style>
 </head>
@@ -14,12 +39,15 @@
 	<div class="container">
 		<div class="opa_block"></div>
 		<div class="login">
-			<h2>Авторизируйтесь</h2>
+			<div class="head">
+				<h2>Авторизируйтесь</h2>
+			</div>
 			<form action="">
 				<input type="text" placeholder="Логин">
+				<br>
 				<input type="password" placeholder="Пароль">
 				<div class="button"></div>
-				<p>Забыл логин или пароль?<a href="#">Напомним!</a></p>
+				<p>Забыл логин или пароль? <a href="#">Напомним!</a></p>
 			</form>
 		</div>
 	</div>
