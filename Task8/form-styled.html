@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Form</title>
+		<style>
+			body {
+				background-color: #D3D3D3;
+				font-family: Arial, sans-serif;
+			}
+			.header h1 {
+				background-color: #6499FF;
+				text-align: center;
+				color: white;
+				font-weight: lighter;
+				border-radius: 10px 10px 0 0;
+				padding: 10px;
+				font-size: 25px;
+			}
+			.container {
+				margin: 0 auto;
+				background-color: white;
+				width: 500px;
+				border-radius: 10px;
+			}
+			p {
+				margin-bottom: 5px;
+				color: #6C6C6E;
+				font-size: 12px;
+				font-weight: bold;
+				margin-left: 5px;
+			}
+			.forms {
+				margin-left: 25px;
+			}
+			.forms input, 
+			textarea {
+				height: 30px;
+				width: 450px;
+				border: 1px solid grey;
+				border-radius: 5px;
+			}
+			input:focus {
+				border: 2px solid #6499FF;
+				outline: none;
+			}
+			textarea {
+				height: 90px;
+			}
+ 			.button {
+				margin-bottom: 20px ;
+				background-color: #6499FF;
+				border: none;
+				border-radius: 5px;
+				width: 250px;
+				height: 40px;
+				color: white;
+				font-size: 15px;
+			}
+			.center {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1>Обратная связь</h1>
+			</div>
+			<form>
+				<div class="forms">
+					<p>Имя:</p>
+					<input type="text" placeholder="Введите Ваше имя">
+				</div>
+				<div class="forms">
+					<p>Ваш email:</p>
+					<input type="text" placeholder="Введите адрес Вашей почты">
+				</div>
+				<div class="forms">
+					<p>Ваш телефон:</p>
+					<input type="text" placeholder="Введите номер телефона">
+				</div>
+				<div class="forms">
+					<p>Сообщение:</p>
+					<textarea name="comment" placeholder="Текст сообщения"></textarea>
+				</div>
+				<p class="center">
+					<input type="submit" value="Отправить" class="button">
+				</p>
+			</form>
+		</div>
+	</body>
+</html>
