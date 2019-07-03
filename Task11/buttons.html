@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Buttons</title>
-	<style>
-		
-	</style>
-</head>
-<body>
-	<input type="text">
-	<a href="" class="first"></a>
-	<button></button>
-	<div class="button"></div>
-	<a href="" class="last"></a>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Buttons</title>
+		<style>
+			body {
+				margin: 0;
+				background-color: #ccc;
+			}
+			.container {
+				background-color: white;
+				width: 1000px;
+				height: 100vh;
+				margin: 0 auto;
+				box-shadow:
+				0 1px 4px rgba(0, 0, 0, .3),
+				-23px 0 20px -23px rgba(0, 0, 0, .8),
+				23px 0 20px -23px rgba(0, 0, 0, .8),
+				0 0 40px rgba(0, 0, 0, .1) inset;
+			}
+			input {
+				width: 200px;
+				height: 40px;
+				margin: 20px 0 0 400px;
+				border: none;
+			}
+			input[type="submit"] {
+				background-color: red;
+				border-radius: 5px;
+				box-shadow: inset rgba(255,255,255,0.2) 8px  8px 18px 5px,
+	            inset rgba(0,0,0,0.5)      -8px -8px 18px 5px;
+	            border: 1px solid black;
+	            font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<input type="submit">
+			<br>
+			<input type="reset">
+			<br>
+			<a href="" class="first">Нажми</a>
+			<br>
+			<button>Нажми</button>
+			<br>
+			<span class="button">Нажми</span>
+		</div>
+	</body>
 </html>
