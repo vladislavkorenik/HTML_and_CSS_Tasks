@@ -23,19 +23,18 @@
 			input {
 				width: 200px;
 				height: 40px;
-				margin: 20px 0 0 400px;
 				border: none;
 			}
 			input[type="submit"] {
+				margin-top: 20px;
 				background-color: red;
 				border-radius: 5px;
 				box-shadow: inset rgba(255,255,255,0.2) 8px  8px 18px 5px,
-	            inset rgba(0,0,0,0.5)      -8px -8px 18px 5px;
-	            border: 1px solid black;
-	            font-weight: bold;
+				inset rgba(0,0,0,0.5)      -8px -8px 18px 5px;
+				border: 1px solid black;
+				font-weight: bold;
 			}
 			input[type="reset"] {
-				margin-bottom: 20px ;
 				background-color: #6499FF;
 				border: none;
 				border-radius: 5px;
@@ -43,7 +42,6 @@
 				font-size: 15px;
 			}
 			a {
-				margin-left: 400px;
 				text-align: center;
 				text-decoration: none;
 				background-color: #FDA600;
@@ -56,19 +54,50 @@
 				box-shadow: 0px 3px 0px #525252;
 				border-radius: 5px;
 			}
+			p {
+				text-align: center;
+			}
+			button {
+				text-shadow: 1px 1px #fff;
+				padding: .3em 1em;
+				border: 1px solid #aaa;
+				border-radius: 100px;
+				background: #d6dbbf no-repeat;
+		        background-image:
+		        linear-gradient(to left, #aaa, #aaa),
+		        linear-gradient(to left, #feffe8, #feffe8),
+		        linear-gradient(#feffe8, #d6dbbf);
+				background-size: 1px 100%, 1px 100%, auto auto;
+			}
+			.button {
+  				padding: 5px;
+  				font-size: 18px;
+  				text-shadow: 0 1px rgba(255,255,255,.2), 0 -1px rgba(0,0,0,.8);
+  				border: none;
+ 				border-radius: 50px;
+  				background: rgb(28,107,114) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
+  				box-shadow: inset rgba(0,0,0,.6) 0 -2px 5px, inset rgba(252,255,255,.7) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
+  				color: rgb(0,79,86);
+			}
 		</style>
 	</head>
 	<body>
 		<div class="container">
-			<input type="submit">
-			<br>
-			<input type="reset">
-			<br>
-			<a href="" class="first">Нажми</a>
-			<br>
-			<button>Нажми</button>
-			<br>
-			<span class="button">Нажми</span>
+			<p>
+				<input type="submit">
+			</p>
+			<p>
+				<input type="reset">
+			</p>
+			<p>
+				<a href="" class="first">Нажми</a>
+			</p>
+			<p>
+				<button>Нажми</button>
+			</p>
+			<p>
+				<span class="button">Нажми</span>
+			</p>
 		</div>
 	</body>
 </html>
