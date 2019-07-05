@@ -113,19 +113,41 @@
 				}
 			}
 			@media screen and (max-width: 375px) {
-				main,
+				header {
+					grid-template-columns: repeat(3, 1fr);
+					grid-template-rows: none;
+					grid-template-areas: 
+					' . logo . '
+					'nav nav nav';
+				}
 				ul {
-					padding: 0;
+					display: block;
 				}
 				li {
-					text-align: center;
-					display: inline;
+					display: block;
+					padding: 10px 0;
+				}
+				main {
+					grid-template-areas: 
+					'main'
+					'lbar'
+					'rbar';
+					grid-template-columns: repeat(1, 1fr);
+				}
+				li {
 					border-top: 1px solid #32c5f6;
 					border-bottom: 1px solid #05b4f0;
 				}
 				.social li {
 					border-top: 1px solid #a2eca2;
 					border-bottom: 1px solid #8fdf8f;
+				}
+				footer {
+					grid-template-areas: 
+					'copy'
+					'social';
+					grid-template-columns: 1fr; 
+					grid-template-rows: none;
 				}
 			}
 		</style>
