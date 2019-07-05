@@ -16,6 +16,7 @@
 				margin: 0 15px;
 				color: white;
 				display: inline;
+				text-align: center;
 			}
 			header,
 			footer {
@@ -24,11 +25,11 @@
 				align-items: center;
 			}
 			header {
-				grid-template-areas: 'logo nav';
+				grid-template-areas: 'logo . nav';
 				color: white;
 				background-color: #00bfff;
 			}
-			.logo h3{
+			.logo {
 				grid-area: logo;
 				background-color: #808080;
 				padding: 15px 50px;
@@ -68,37 +69,48 @@
 			.copy {
 				grid-area: copy;
 				padding: 15px 10px;
+				text-align: center;
 			}
 			.social {
 				grid-area: social;
 			}
 			@media screen and (max-width: 760px) {
-				header {
-
+				header,
+				footer {
+					grid-template-columns: repeat(5, 1fr);
+					grid-template-rows: repeat(2, 1fr);
+					justify-content: space-around;
 				}
-				.logo {
-					background-color: #00bfff;
+				header {
+					grid-template-areas:
+					' . . logo . . '
+					'nav nav nav nav nav';
+				}
+				ul {
+					display: grid;
+					justify-content: space-around;
+					padding: 0;
 				}
 				.nav_bar {
-					justify-content: center;
+					grid-template-columns: repeat(4, 1fr);
 				}
 				main {
-
-				}
-				.info {
-
+					grid-template-areas: 
+					'main main'
+					'lbar rbar';
+					grid-template-columns: repeat(2, 1fr);
 				}
 				.aside {
 					padding: 10px;
 				}
 				footer {
-				}
-				.copy {
-					text-align: center;
+					grid-template-areas: 
+					'. copy copy copy .'
+					'social social social social social'; 
 				}
 				.social {
-					padding: 0;
-				}			
+					grid-template-columns: repeat(3, 1fr);
+				}
 			}
 			@media screen and (max-width: 375px) {
 				main,
@@ -123,12 +135,12 @@
 			<div class="logo">
 				<h3>Logo</h3>
 			</div>
-			<ul class="nav_bar">
-				<li>Главная</li>
-				<li>О нас</li>
-				<li>Продукты</li>
-				<li>Контакты</li>
-			</ul>
+				<ul class="nav_bar">
+					<li>Главная</li>
+					<li>О нас</li>
+					<li>Продукты</li>
+					<li>Контакты</li>
+				</ul>
 		</header>
 		<main>
 			<div class="aside_1 aside">
