@@ -13,7 +13,7 @@
 				list-style-type: none;
 			}
 			li {
-				display: inline-block;
+				display: inline-flex;
 				padding: 15px;
 				color: white;
 			}
@@ -93,9 +93,26 @@
 				}
 				.social {
 					display: flex;
-					justify-content: space-around;
 					padding: 0;
 				}			
+			}
+			@media screen and (max-width: 375px) {
+				main,
+				ul {
+					flex-direction: column;
+					justify-content: center;
+					padding: 0;
+				}
+				li {
+					text-align: center;
+					display: inline;
+					border-top: 1px solid #32c5f6;
+					border-bottom: 1px solid #05b4f0;
+				}
+				.social li {
+					border-top: 1px solid #a2eca2;
+					border-bottom: 1px solid #8fdf8f;
+				}
 			}
 		</style>
 	</head>
