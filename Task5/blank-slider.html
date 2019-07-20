@@ -23,6 +23,7 @@
 				height: 425px;
 				background: black;
 				position: relative;
+				overflow: hidden;
 			}
 			.text {
 				color: white;
@@ -48,21 +49,21 @@
 				position: relative;
 				margin: 0 auto;
 			}
-			.left {
-				background: url(prev-next-sprite.png);
-				background-repeat: no-repeat;
-				background-position: left 80px top 170px;
+			.left,
+			.right {
+				position: absolute;
 				height: 100%;
 				width: 110px;
+				background: url(prev-next-sprite.png);
+				background-repeat: no-repeat;
+			}
+			.left {
+				background-position: left 80px top 170px;
 				left: 0;
 			}
 			.right {
-				background-image: url(prev-next-sprite.png);
-				background-repeat: no-repeat;
 				background-position: right 80px top 170px;
-				height: 100%;
-				width: 110px;
-				left: 100%;
+				right: 0;
 			}
 			.pagination {
 				width: 210px;
@@ -98,8 +99,8 @@
 				</p>
 			</div>
 			<div class="buttons">
-				<a href="#" class="right centered_x"></a>
-				<a href="#" class="left centered_x"></a>
+				<a href="#" class="right"></a>
+				<a href="#" class="left"></a>
 			</div>
 			<div class="pagination centered_x">
 				<ul>
